@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d12de0da45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="logo">
+                <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            </div>
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos, marcas y más</div>
+                <div class="submit"><i style="color : #216fe4" class="fa fa-search"></i></div>
+            </div>
+            <div>
+                <p class="buy"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </div>
+        <div class="contenedor-nav" id="_items">
+            <nav>
+                <div class="lista">
+                    <ul class="nav-list">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+
+                        <div class="item">
+                            <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        </div>
+                        <div>
+                            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                        </div>
+                        <div>
+                            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                        </div>
+                        <div>
+                            <li><a href="/" class="back">volver</a></li>
+                        </div>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <div class="burger-menu" id="_toggle">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+    <main class="login">
+        <form action="/" method="get">
+            <input type="text" name="user" placeholder="Nombre de usuario" id="text"><br>
+            <div class="mensaje__error" id=" formularioError">
+                <p><b>Error:</b>por favor ,rellena el formulario correctamente.</p>
+            </div>
+            <input type="password" name="pass" placeholder="********"><br>
+            <input type="submit" value="Enviar" onclick="comprobarCampoVacio()"><br>
+        </form>
+    </main>
+    <footer>
+        <div class="div_conteiner">
+            <div>
+                <i class="fa-solid fa-credit-card"></i>
+                <h4>Pagá con tarjeta o en efectivo</h4>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gift"></i>
+                <h4>Envío gratis desde $ 2.500</h4>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-shield"></i>
+                <h4>Seguridad, de principio a fin</h4>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </div>
+        </div>
+    </footer>
+    <h4 class="ultimoh4">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+    <script>
+        _toggle.onclick = () => {
+            _items.classList.toggle("open");
+            _toggle.classList.toggle("xindex");
+        }
+      
+        function comprobarCampoVacio() {
+            var campo = document.getElementById("text");
+            var valor = campo.value;
+
+            if (valor === "") {
+                alert("El campo está vacío. Por favor, ingresa un valor.");
+                formularioError.classList.toggle("mensaje__error-activo")
+            }
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
