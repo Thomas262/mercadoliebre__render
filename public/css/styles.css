@@ -1,92 +1,100 @@
-*{
+* {
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
 
-nav i{
+nav i {
     color: #0044AA;
 }
 
-h3{
+h3 {
     font-size: 24px;
 }
 
-p{
+p {
     font-size: 12px;
 }
 
-div.top-header{
+div.top-header {
     display: flex;
     flex-wrap: wrap;
     padding: 5%;
 }
 
-header div.top-header p{
+header div.top-header p {
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
 
-header{
+header {
     background-color: #EAC926;
 }
 
 header div.logo,
-header .form{
+header .form {
     width: 50%;
 }
 
-header div.logo{
+header div.logo {
     padding: 10px;
 }
-header .form{
+
+header .form {
     display: flex;
     align-items: center;
     padding: 2px;
     font-size: 11px;
-}
-header nav{
-    font-size: 12px;
-    margin-left: 20px;
+    border-radius: 5px;
 }
 
-header ul li{
+header nav {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+header ul li {
     list-style-type: none;
 }
 
-header ul li a{
+header ul li a {
     text-decoration: none;
     color: #000;
 }
 
-header .form .input{
+header .form .input {
     background-color: #FFF;
     border: 1px solid #fff;
     outline: none;
     color: #666;
-    padding: 2px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-header .form .submit{
+header .form .submit {
     background-color: #FFF;
     border: 1px solid #FFF;
     color: #666;
     width: 20px;
     height: auto;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: -6px;
+
 }
 
-div.burger-menu{
+div.burger-menu {
     text-align: center;
-    
+
 }
 
-div.burger-menu i{
+div.burger-menu i {
     background-color: #0044AA;
     border-radius: 5px;
     color: #FFF;
@@ -98,60 +106,60 @@ div.burger-menu i{
 }
 
 div.last-visit,
-div.offers{
+div.offers {
     display: flex;
     flex-wrap: wrap;
 }
 
-.price{
+.price {
     font-size: 18px;
     width: 30%;
 }
 
-.discount{
+.discount {
     width: 70%;
 }
 
 .discount,
-.description{
+.description {
     font-size: 16px;
     font-weight: normal;
 }
 
 h3,
-.description{
+.description {
     color: #666;
 }
 
-.description{
+.description {
     display: none;
     margin-top: 20px;
 }
 
-section.banner img{
+section.banner img {
     width: 100%;
 }
 
-main{
+main {
     width: 90%;
     margin: 0 auto;
 }
 
-main section article{
-    background-color: #fff;    
+main section article {
+    background-color: #fff;
     margin: 10px 0px;
 }
 
-main section article img{
+main section article img {
     width: 100%;
 }
 
 main section article i,
-.discount{
+.discount {
     color: #39b54a;
 }
 
-main section article i{
+main section article i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -164,20 +172,21 @@ main section article i{
     right: 20px;
     top: -15px;
 }
-main section article i{
+
+main section article i {
     transition: transform 1s;
 }
 
-main section article i:hover{
-    
-    transform: rotate(-90deg);
-  }
+main section article i:hover {
 
-main section h3{
+    transform: rotate(-90deg);
+}
+
+main section h3 {
     margin: 20px 0px;
 }
 
-article div.main-article{
+article div.main-article {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -192,167 +201,232 @@ footer {
     height: auto;
     background-color: white;
     text-align: center;
-    padding:10px ;
+    padding: 10px;
 }
-footer i {
-    color:#1259c3;
-    padding: 20px;
-    
+
+footer .fa-solid {
+    color: #1259c3;
+    width: 30px;
+    height: 30px;
+    font-size: 26px;
+    margin: 5px;
+
 }
-main section article:hover{
+
+main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-main section article h4{
+
+main section article h4 {
     display: none;
 }
 
-main section article:hover h4{
+main section article:hover h4 {
     display: block;
 }
 
 
-.contenedor-nav{
-    transform:translate(-100%) ;
-}
-.open{
-    transform: translate(0%) !important;
-   
-}
-.xindex{
-    transform:translate(-100%) ;
+.contenedor-nav {
+    /*   transform: translate(-100%); */
+    display: none;
+    padding: 5px;
 }
 
-.buy{
-   margin-left: 50%;
+.open {
+    /*    transform: translate(0%) !important; */
+    display: block;
+
+}
+
+.close {
+    /*   transform: translate(-100%); */
+    display: none;
+}
+
+/* .buy {
+    /* margin-left: 20%; 
+} */
+
+.bestbuy {
+    display: contents;
+
+}
+.ultimoh4 {
+    font-size: 0.8em;
+    color: #666;
+    background-color: #FFF;
+    min-height: 2vh;
 }
 
 
-@media (min-width: 576px){
-    main section article .description{
+
+
+@media (min-width: 576px) {
+
+
+    main section article .description {
         display: block;
     }
 
-    main section article:hover{
+    main section article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    main section div.products{
+    main section div.products {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
     }
-    
-    main section article h4.description{
+
+    main section article h4.description {
         display: none;
     }
-    
-    main section article:hover h4.description{
+
+    main section article:hover h4.description {
         display: block;
     }
 
 
 
-    main section div.products article{
+    main section div.products article {
         width: 45%;
     }
-    .contenedor-nav{
-        transform: translate(0%);
+
+    .lista {
+        padding-bottom: 10px;
+    }
+
+    .contenedor-nav {
+        display: block;
 
     }
-    .nav-list {display: flex;
-        gap: 30px;
-        padding: 25px;
-        
+
+    .nav-list {
+        display: flex;
+        gap: 10px;
+        padding: 0px;
     }
-    .item{ 
-        margin-left: 40%; 
+
+    .item {
+        display: flex;
+        gap: 10px;
+        margin-left: auto;
     }
+
     .burger-menu {
-        
-            position: absolute;
-            z-index: -1;
-        }
+
+        position: absolute;
+        z-index: -1;
+    }
+
     .price,
-    .discount{
+    .discount {
         width: 50%;
     }
-    header .form .input{
+
+    header .form .input {
         background-color: #FFF;
         border: 1px solid #fff;
         outline: none;
         height: 30px;
         width: 70%;
-        margin-left: 60px;
-        
-        
+        margin-left: 20px;
+
+
     }
-    
-    header .form .submit{
-        background-color: #ffffff;;
+
+    header .form .submit {
+        background-color: #ffffff;
+        ;
         border: 1px solid #ffffff;
         color: #666;
         width: 20px;
         height: 30px;
-        
-    }
-    .burger-menu{
-        transform:translate(-100%)
-    }
-     
-    .buy{
-        margin-left: 200px;
+
     }
 
-    .ultimoh4{
-         font-size: 0.8em;
-        color: #666;
+    .burger-menu {
+        transform: translate(-100%)
+    }
+
+    .bestbuy {
+        display: flex;
+
+    }
+
+    header div.logo,
+    header .bestbuy {
+        width: 30%;
+    }
+
+    header .form {
+        width: 40%;
+    }
+
+
+    
+    header div.top-header p {
+        margin-top: 20px;
+
     }
 
 }
 
-@media (min-width: 992px){
-    main section div.products article{
+@media (min-width: 992px) {
+    main section div.products article {
         width: 22%;
     }
 
-   header div.logo,
-    header .form{
-    width: 30%;
-}
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #fff;
-    outline: none;
-    height: 30px;
-    width: 110%;
-    margin-left: 60px;
-    padding: 6px;
-    
-}
-header .form .submit{
-    background-color: #fff;
-    border: 1px solid #fff;
-    color: #666;
-    width: 20px;
-    height: 30px;
-    
-}
- .top-header{
-    align-items: center;
-    gap: 10px;
- }
-
-.buy {
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-left: 60%;
-}
-
-footer  div.div_conteiner{
-    display: flex;
+    header div.logo,
+    header .form {
+        width: 30%;
     }
 
+    header .form .input {
+        background-color: #FFF;
+        border: 1px solid #fff;
+        outline: none;
+        height: 30px;
+        width: 110%;
+        margin-left: 0px;
+        padding: 6px;
+
+    }
+
+    header .form .submit {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #666;
+        width: 20px;
+        height: 30px;
+
+    }
+
+    .top-header {
+        align-items: center;
+        gap: 30px;
+    }
+
+    header div.top-header p {
+        margin-top: 10px;
+
+    }
+
+    .buy {
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    footer div.div_conteiner {
+        display: flex;
+    }
+
+    header div.top-header p {
+        text-align: end;
+        margin-top: -10px;
+    }
 }

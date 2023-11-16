@@ -20,8 +20,11 @@
                 <div class="input">Buscar productos, marcas y más</div>
                 <div class="submit"><i style="color : #216fe4" class="fa fa-search"></i></div>
             </div>
-            <div>
-                <p class="buy"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+             <div class="bestbuy">
+ 
+                 <p class="buy"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+ 
+                </div>
             </div>
         </div>
         <div class="contenedor-nav" id="_items">
@@ -35,20 +38,20 @@
 
                         <div class="item">
                             <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                            <div>
+                                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                            </div>
+                            <div>
+                                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                            </div>
+                            <div>
+                                <li><a href="/" class="back">volver</a></li>
+                            </div>
                         </div>
-                        <div>
-                            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                        </div>
-                        <div>
-                            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                        </div>
-                        <div>
-                            <li><a href="/" class="back">volver</a></li>
-                        </div>
-                    </ul>
+                        </ul>
                 </div>
+            </nav>
         </div>
-        </nav>
         <div class="burger-menu" id="_toggle">
             <i class="fa fa-bars burger"></i>
         </div>
@@ -168,7 +171,7 @@
     <script>
         _toggle.onclick = () => {
             _items.classList.toggle("open");
-            _toggle.classList.toggle("xindex");
+            _toggle.classList.toggle("close");
         }
 
     </script>
