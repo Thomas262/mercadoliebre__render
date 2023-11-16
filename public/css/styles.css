@@ -429,4 +429,11 @@ main section article:hover h4 {
         text-align: end;
         margin-top: -10px;
     }
+    .nav-list {
+        gap: 20px;
+    }
+    .item {
+        gap: 20px;
+  }
+
 }
